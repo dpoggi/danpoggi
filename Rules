@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+compile '/images/*' do
+end
+
+compile '/javascripts/*' do
+end
+
+compile '/stylesheets/*' do
+  filter :sass, :syntax => :scss, :format => :compressed
+end
+
+compile '/vcard/' do
+end
+
+compile '*' do
+  filter :haml
+end
+
+route '/images/*' do
+  "/images/#{File.basename(rep.item.raw_filename)}"
+end
+
+route '/javascripts/*' do
+  "/javascripts/#{File.basename(rep.item.identifier)}.js"
+end
+
+route '/stylesheets/*' do
+  "/stylesheets/#{File.basename(rep.item.identifier)}.css"
+end
+
+route '/vcard/' do
+  '/vcard.vcf'
+end
+
+route '*' do
+  rep.item.identifier + 'index.html'
+end

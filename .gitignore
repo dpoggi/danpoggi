@@ -1,0 +1,6 @@
+!*.gitkeep
+output/*
+!output/.gitkeep
+tmp/*
+!tmp/.gitkeep
+.sass-cache/

@@ -1,0 +1,100 @@
+!!!
+%html{:lang => 'en'}
+  %head
+    %meta{:charset => 'utf-8'}
+    
+    %link{:rel => 'stylesheet', :href => 'stylesheets/screen.css', :media => 'screen, projection'}
+    /[if lt IE 7]
+      %link{:rel => 'stylesheet', :href => 'stylesheets/ie.css', :media => 'screen, projection'}
+
+    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'}
+    %script{:src => 'javascripts/vtip.js'}
+
+    %title Dan Poggi
+  %body
+    #wrapper
+      #datacontent
+        #header
+          #avatar.vtip
+            %a{:href => 'vcard.vcf'}
+              %img{:src => 'images/avatar.png', :alt => 'Dan Poggi'}
+          #name
+            %h1 Dan Poggi
+            %br
+            %h3 Agile Bansai ScrumLord
+        %ul.navigation
+          %li
+            %a{:href => '#about'} About
+          %li
+            %a{:href => '#social'} Social
+          %li
+            %a{:href => '#contact'} Contact
+
+        .panels
+          #about.panel
+            .content
+              %h2 About Me
+              %p
+                My name is Dan Poggi, and I've been using computers since well before I could read. They are my passion. Today I use that passion as a driving force to develop clean, beautiful web applications that <em>just work</em>. I am currently a student at and an employee of <a href='http://msu.edu/'>Michigan State University</a>, but when I'm in my hometown of Grand Rapids, Michigan, I help personal clients with their computer problems.
+              %p
+                In my spare time, I enjoy long walks on the beach, playing the <a href='http://youtube.com/watch?v=Pmj_R-Bt88M'>guitar</a>, <a href='http://momastore.org/'>good design</a>, <a href='http://bluelounge.com/'>good design</a>, and playing with <a href='http://thinkgeek.com/geektoys/rc/bb98/'>toys</a>.
+
+          #social.panel
+            %ul#networks
+              %li.first
+                .icon
+                  %img{:src => 'images/twitter.png', :alt => 'Twitter'}
+                .network
+                  %a{:href => 'http://twitter.com/danpoggi'}
+                    %span Twitter
+                    %br
+                    twitter.com/danpoggi
+              %li
+                .icon
+                  %img{:src => 'images/linkedin.png', :alt => 'LinkedIn'}
+                .network
+                  %a{:href => 'http://linkedin.com/pub/dan-poggi/29/90a/1a4'}
+                    %span LinkedIn
+                    %br
+                    linkedin.com/pub/dan-poggi/29/90a/1a4
+              %li
+                .icon
+                  %img{:src => 'images/facebook.png', :alt => 'Facebook'}
+                .network
+                  %a{:href => 'http://facebook.com/danpoggi'}
+                    %span Facebook
+                    %br
+                    facebook.com/danpoggi
+              %li.last
+                .icon
+                  %img{:src => 'images/youtube.png', :alt => 'YouTube'}
+                .network
+                  %a{:href => 'http://youtube.com/user/m0lten'}
+                    %span YouTube
+                    %br
+                    youtube.com/user/m0lten
+          #contact.panel
+            .content
+              %h2 Contact
+              %p
+                Feel free to contact me regarding future projects, the weather, or just to say hello. You can find my r&eacute;sum&eacute; <a href='/resume'>here</a>.
+
+              %ul#contact_info
+                %li
+                  %img{:src => 'images/phone.png', :style => 'width: 16px; height: 16px;', :alt => 'Phone'}
+                  %span +1 616 425 9376
+                %li
+                  %img{:src => 'images/email.png', :style => 'width: 16px; height: 16px;', :alt => 'E-mail'}
+                  %span
+                    %a{:href => 'mailto:dan@danpoggi.com'} dan@danpoggi.com
+                %li
+                  %img{:src => 'images/web.png', :style => 'width: 16px; height: 16px;', :alt => 'Web'}
+                  %span
+                    %a{:href => 'http://danpoggi.com/'} danpoggi.com
+        #bottom
+        #copyright
+          &copy;
+          = Time.now.year
+          Dan Poggi. All rights reserved. Inspired by Tim Van Damme.
+
+    %script{:type => 'text/javascript', :src => 'javascripts/init.js'}

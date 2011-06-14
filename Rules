@@ -14,7 +14,7 @@ compile '/vcard/' do
 end
 
 compile '*' do
-  filter :haml
+  filter :haml, :format => :html5
 end
 
 route '/images/*' do

@@ -10,9 +10,6 @@ compile '/stylesheets/*' do
   filter :sass, :syntax => :scss, :format => :compressed
 end
 
-compile '/vcard/' do
-end
-
 compile '*' do
   filter :haml, :format => :html5
 end
@@ -27,10 +24,6 @@ end
 
 route '/stylesheets/*' do
   "/stylesheets/#{File.basename(rep.item.identifier)}.css"
-end
-
-route '/vcard/' do
-  '/vcard.vcf'
 end
 
 route '*' do

@@ -7,7 +7,7 @@ compile '/javascripts/*' do
 end
 
 compile '/stylesheets/*' do
-  filter :sass, :syntax => :scss, :format => :compressed
+  filter :sass, :syntax => :scss, :style => :compressed
 end
 
 compile '*' do

@@ -7,7 +7,6 @@ $ () ->
     
     panels = $(panelIds)
     panelWrapper = panels.filter(':first').parent()
-
     delay = 500
     heightOffset = 40
 

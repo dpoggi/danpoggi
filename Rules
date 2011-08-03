@@ -4,6 +4,7 @@ compile '/images/*' do
 end
 
 compile '/javascripts/*' do
+  filter :coffee
 end
 
 compile '/stylesheets/*' do

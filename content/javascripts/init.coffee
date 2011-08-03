@@ -14,17 +14,14 @@ $ () ->
     links.click () ->
       link = $ this
       baseLink = this
-
       if link.is('.selected')
         return false
-
       links.removeClass 'selected'
       link.addClass 'selected'
-
       document.title = 'Dan Poggi - ' + link.text()
+      
       if $.support.opacity
         panels.stop().animate {opacity: 0}, delay
-
       panelWrapper.stop().animate {height: 0}, delay, () ->
         height = panels.hide().filter(baseLink.hash).css('opacity', 1).show().height() + heightOffset
         panelWrapper.animate {height: height}, delay

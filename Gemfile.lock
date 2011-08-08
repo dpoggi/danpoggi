@@ -5,16 +5,16 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.1.1)
+    coffee-script-source (1.1.2)
     cri (2.0.2)
-    execjs (1.2.1)
+    execjs (1.2.4)
       multi_json (~> 1.0)
     haml (3.1.2)
     mime-types (1.16)
     multi_json (1.0.3)
     nanoc3 (3.2.1)
       cri (~> 2.0)
-    sass (3.1.5)
+    sass (3.1.7)
 
 PLATFORMS
   ruby

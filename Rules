@@ -5,6 +5,7 @@ end
 
 compile '/javascripts/*' do
   filter :coffee
+  filter :uglify_js
 end
 
 compile '/stylesheets/*' do

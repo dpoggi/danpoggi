@@ -12,9 +12,9 @@ task :deploy do
   puts `bundle exec nanoc3 compile`
   Dir.glob('output/*') do |item|
     if File.directory? item
-      puts `s3cmd sync #{item} s3://danpoggi/`
+      puts `s3cmd sync #{item} s3://www.danpoggi.com/`
     else
-      puts `s3cmd put #{item} s3://danpoggi/`
+      puts `s3cmd put #{item} s3://www.danpoggi.com/`
     end
   end
 end

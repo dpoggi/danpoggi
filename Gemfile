@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'nanoc3'
+gem 'nanoc'
 gem 'mime-types'
 gem 'haml'
 gem 'bluecloth'

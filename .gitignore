@@ -4,15 +4,14 @@
 capybara-*.html
 .rspec
 .ruby-version
-.ruby-gemset
 /.bundle
 /vendor/bundle
 /log/*
 !/log/.gitkeep
 /tmp/*
 !/tmp/.gitkeep
-/output/*
-!/output/.gitkeep
+/public/output/*
+!/public/output/.gitkeep
 /config/*.yml
 /db/*.sqlite3
 /public/system/*

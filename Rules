@@ -1,33 +1,33 @@
 #!/usr/bin/env ruby
 
-compile '/images/*' do
+compile '/**/*.haml' do
+  filter :haml, format: :html5
 end
 
-compile '/javascripts/*' do
-  filter :coffee
-  filter :uglify_js
+compile '/**/*.html' do
 end
 
-compile '/stylesheets/*' do
-  filter :sass, :syntax => :scss, :style => :compressed
+route '/**/*.{html,haml}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    "#{item.identifier.without_ext}/index.html"
+  end
 end
 
-compile '*' do
-  filter :haml, :format => :html5
+ignore '/**/reset.scss'
+
+compile '/**/*.scss' do
+  filter :sass, syntax: :scss, style: :compressed
 end
 
-route '/images/*' do
-  "/images/#{File.basename(rep.item.raw_filename)}"
+compile '/**/*.css' do
 end
 
-route '/javascripts/*' do
-  "/javascripts/#{File.basename(rep.item.identifier)}.js"
+route '/**/*.{css,scss}' do
+  "#{item.identifier.without_ext}.css"
 end
 
-route '/stylesheets/*' do
-  "/stylesheets/#{File.basename(rep.item.identifier)}.css"
-end
-
-route '*' do
-  rep.item.identifier + 'index.html'
-end
+passthrough '/images/**/*'
+passthrough '/**/*.pdf'
+passthrough '/**/*.txt'

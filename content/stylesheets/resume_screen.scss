@@ -1,0 +1,146 @@
+// Reset CSS 2.0 by Eric Meyer
+@import "reset";
+
+//
+// Variables
+//
+
+$background-color: rgba(0, 0, 0, 0.6);
+$background-image: url(/images/resume_bg.jpg) repeat fixed;
+$border-radius: 1em;
+$font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$text-color: #fff;
+$text-shadow: 1px 0px 1px #000;
+
+//
+// Mixins
+//
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin bottom-border-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  -moz-border-radius-bottomright: $radius;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+//
+// Styles
+//
+
+body {
+  background: $background-image;
+  font-family: $font-family;
+  color: $text-color;
+  text-shadow: $text-shadow;
+}
+
+a {
+  color: $text-color;
+}
+
+em {
+  font-style: italic;
+}
+
+header {
+  @include bottom-border-radius($border-radius);
+
+  overflow: auto;
+  padding: .4em 1em .2em 1em;
+  background-color: $background-color;
+
+  h1 {
+    margin-bottom: .2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+  }
+
+  hgroup {
+    h2, h3, h4 {
+      float: left;
+      width: 33.3%;
+    }
+    h3 {
+      text-align: center;
+    }
+    h4 {
+      width: 33.3%;
+      text-align: right;
+    }
+  }
+}
+
+section {
+  @include border-radius($border-radius);
+
+  width: 960px;
+  overflow: auto;
+  margin: 2em auto;
+  padding: 1em;
+  padding-bottom: 0;
+  background-color: $background-color;
+
+  h1 {
+    float: left;
+    width: 22%;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  article {
+    float: left;
+    width: 78%;
+
+    h2, h3, h4 {
+      font-weight: bold;
+    }
+    h2, h3 {
+      margin-bottom: .2em;
+    }
+    h4 {
+      margin-bottom: .6em;
+    }
+    h5, h6 {
+      font-size: 14px;
+      margin-bottom: .2em;
+    }
+    h6 {
+      margin-bottom: .6em;
+    }
+
+    ul {
+      padding-left: 2em;
+      margin-bottom: 1em;
+      list-style-type: circle;
+      li {
+        margin-bottom: .5em;
+        font-size: 14px;
+      }
+    }
+
+    div {
+      ul {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+section#education {
+  padding-bottom: .7em;
+}

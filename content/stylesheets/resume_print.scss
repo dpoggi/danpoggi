@@ -1,0 +1,57 @@
+// Reset CSS 2.0 by Eric Meyer
+@import "reset";
+
+//
+// Variables
+//
+
+$text-color: #000;
+
+//
+// Styles
+//
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+h1 {
+  font-size: xx-large;
+}
+h2, h3, h4 {
+  font-size: large;
+}
+
+header {
+  hgroup {
+    font-size: small
+  }
+}
+
+section {
+  margin-top: 2em;
+
+  article {
+    div, h2, p {
+      margin-top: 1em;
+    }
+
+    h4 {
+      margin-bottom: 1em;
+    }
+
+    ul {
+      li {
+        margin-bottom: .5em;
+      }
+    }
+  }
+}
+
+section#work {
+  margin-top: 3em;
+}

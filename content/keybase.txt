@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/danpoggi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.danpoggi.com
+  * I am danpoggi (https://keybase.io/danpoggi) on keybase.
+  * I have a public key with fingerprint 5856 66BC B89E 0715 437B  8D59 B5B1 A0AD A87C 0567
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "585666bcb89e0715437b8d59b5b1a0ada87c0567",
+            "host": "keybase.io",
+            "key_id": "B5B1A0ADA87C0567",
+            "uid": "1c0fcedad21281b5660e9c061c5dde19",
+            "username": "danpoggi"
+        },
+        "merkle_root": {
+            "ctime": 1425675413,
+            "hash": "cf628acdbc9d02847d64a9337fc7f877cb8dc2d3022cbf543ddf9d18d856004436f1cec58c477214cbf2463d33d7fc1cde6234513d98529271173a7d72affc3f",
+            "seqno": 173246
+        },
+        "service": {
+            "hostname": "www.danpoggi.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1425675496,
+    "expire_in": 157680000,
+    "prev": "112b2cdfe204b8db2d2d36c13c5959aefb190dd402b1ae2d614a6240b8154bd3",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFdkntMVmUcx7kIqUtgk0WNavAiEYov535Bi168gBaKirSkeDnneZ4Dh8s5eN6X
+m/L2B5eExgARcxIxWxvEAokZQcqaUMkUo+ZYswVvYHiJoWuAgdCw5zBcl+ev85zn
++/v+fp/f71e3wdtjrWd317mOT0t8MjyHfpc9khcDHxy3yDostsQct4AcFWlO80uT
+cpElxpKNimXJgayqHqLpEFmzHCGrmihLATIcqq5hFWHlrbzFFWXKzWBF1TKQkWeo
+ppeFFViO42QgCyIieJJlaF4WICvKrExKhAQlgQcEy/HYMlN3OP+T1bLiaVch/hvH
+xpE2wrbTJvA7VvX5Kw8kIBSAoAQpkhJIGWcjkAgIjgQshIgUTaEDGatIUNLy9IwM
+1aw3FxnZOchu6PoKNHCqpoRkKGzPMiSNK5IcmTgIKBwlSADKQIQEJTA85BhJpGle
+Abwi8DyGg4CCNEFRQFYwIoSKCEkBYnaCYBiaU0iAACsAhucpksEiiuFoSNMQW5AA
+Io6iGZakoSiwlEjxJMnTEg95SlIUQCsYwYGOajoujqdxpMu8GwUqQGbdZttW6QoL
+C61PCK1Az8WBeYbu1IGeg18znc68GBPcWZxnqrsKkWxfNbLLqgbx4P49WRJL/9cU
+kYuyoKI81UB21VSwPCcQ+Jh5UIE5DZKSKQAVRBEM7opMQdwXDpA0YEVWlJAikyIB
+IUNQePyIghzJSBzFELKAV0OG9D+oIq5TysCWDjVDk5z5BrK4qryeX+PhudbD18fL
+XF2P9esCnuzz59X+jxNsKSE3Oh42vhoWvBDcLUY3ab+4ymfqiPnLt9xJ1ZNZr/fN
+9bTfOf99lM8Z4tjU0rh46pVYd21g6kdbuKhqeTS0pleNu7bugM25TEcP7v2s3eV+
+Z+DPO0fDmob3EW1cwrmfZ+tcQfMJ2xbfHPtuzhERJFsbBo51WMl5JrS2w/5wdmMK
+XZlqeB/8q+tq/1PMu1mNQyW+Lww4Tl+IXHaGpqH3elpeau95ua42N9IH7eiP/6L1
+ur3jxT8mOy2C+6yvVronW0RlJYNFg4e+6az40Aj0G5sI+DG837Z/593s+E2/3pzc
+OrV7/9amxPTF3lPXvMRTRPqW5+4+mslOjCg6nHxpIiZtOPXt9Pjm3lln6Mmmhfrz
+BwPTlytOjy8EfXsv03vUt+zZzcOfTD/DRkRsqo8OWPop6MvQrgttmjKVUuq/p7E0
+5lBZ9jYxSXzsaN3lGrjXdCL4xnDQGye/SnIf9ipvSTOuZMXWlF3sq/j4yKPY2c4j
+6b3N3Rvq/Q6k7irybfSgM/u2aw1RSiCTqJ0gwvf81te8tyl67vbAa/m7Ydzttq+L
+s6YDNP+x7qW2kffpQh6s2Sj94O30bPDdXjtz6XLV+MiobeBi1c0p/YP17INydeS+
+19UrT9fsi/dLPuseYtxvna0MLxokutSJhsrI2LrKW2HTacURwvUzM64zGmjZfL+1
+JJoL/Rs=
+=cvTF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/danpoggi
+
+==================================================================

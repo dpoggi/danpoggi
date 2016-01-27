@@ -1,9 +1,17 @@
-text_extensions: [ 'css', 'haml', 'htm', 'html', 'js', 'coffee', 'sass', 'scss', 'txt' ]
+string_pattern_type: glob
+text_extensions: [ 'html', 'haml', 'css', 'scss', 'txt' ]
 output_dir: public/output
 index_filenames: [ 'index.html' ]
 enable_output_diff: false
+
+prune:
+  auto_prune: true
+  exclude: [ '.keep' ]
+
 data_sources:
   -
-    type: filesystem_unified
+    type: filesystem
     items_root: /
     layouts_root: /
+    encoding: utf-8
+    identifier_type: full

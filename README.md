@@ -2,4 +2,4 @@
 
 # Copyright
 
-Copyright (C) 2015 Dan Poggi. MIT License, see LICENSE for details.
+Copyright (C) 2016 Dan Poggi. MIT License, see LICENSE for details.

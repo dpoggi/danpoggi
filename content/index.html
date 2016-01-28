@@ -19,12 +19,26 @@
         color: #23527c;
         text-decoration: underline;
       }
+
+      /* thanks to fredericiana.com/2012/11/04/html5-blink-tag/ for the CSS3 */
+      .blink {
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(2, start);
+      }
+
+      @keyframes blink {
+        80% {
+          visibility: hidden;
+        }
+      }
     </style>
     <title>Dan Poggi &ndash; Under Construction</title>
   </head>
   <body>
     <img src="/images/under_construction.gif" alt="Under Construction">
-    <p>welcome to the 90s ^^</p>
+    <p class="blink">welcome to the 90s ^^</p>
     <p><a href="/resume">resume</a></p>
     <p><a href="/resume/dan_poggi_resume.pdf">(pdf)</a></p>
   </body>

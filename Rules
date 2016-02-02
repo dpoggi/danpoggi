@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require_relative 'lib/latex_filter'
 
 compile '/**/*.haml' do
   filter :haml, format: :html5
@@ -28,6 +29,13 @@ route '/**/*.{css,scss}' do
   "#{item.identifier.without_ext}.css"
 end
 
+compile '/**/*.tex' do
+  filter :latex
+end
+
+route '/**/*.tex' do
+  "#{item.identifier.without_ext}.pdf"
+end
+
 passthrough '/images/**/*'
-passthrough '/**/*.pdf'
 passthrough '/**/*.txt'

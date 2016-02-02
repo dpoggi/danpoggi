@@ -1,5 +1,5 @@
 string_pattern_type: glob
-text_extensions: [ 'html', 'haml', 'css', 'scss', 'txt' ]
+text_extensions: [ 'html', 'haml', 'css', 'scss', 'tex', 'txt' ]
 output_dir: public/output
 index_filenames: [ 'index.html' ]
 enable_output_diff: false

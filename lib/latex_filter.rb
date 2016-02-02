@@ -15,9 +15,7 @@ class LatexFilter < Nanoc::Filter
 
       Dir.chdir(dir) do
         system('pdflatex', input_path)
-        unless $? == 0
-          raise 'pdflatex failed!'
-        end
+        raise 'pdflatex failed!' unless $? == 0
         FileUtils.cp(output_path, output_filename)
       end
     end

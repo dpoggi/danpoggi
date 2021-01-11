@@ -7,7 +7,7 @@ gem 'w3c_validators', '~> 1.2'
 gem 'mime-types'
 
 gem 'haml', '~> 4.0.7'
-gem 'redcarpet', '~> 3.3.4'
+gem 'redcarpet', '~> 3.5.1'
 gem 'sass', '~> 3.4.21'
 
 gem 'adsf', '~> 1.2.0'

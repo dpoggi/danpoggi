@@ -22,7 +22,7 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.6.4)
-    redcarpet (3.3.4)
+    redcarpet (3.5.1)
     s3_website (2.12.2)
       colored (= 1.2)
       configure-s3-website (= 1.7.1)
@@ -44,7 +44,7 @@ DEPENDENCIES
   mime-types
   nanoc (~> 4.1.2)
   nokogiri (~> 1.6.7)
-  redcarpet (~> 3.3.4)
+  redcarpet (~> 3.5.1)
   s3_website (~> 2.12.2)
   sass (~> 3.4.21)
   w3c_validators (~> 1.2)

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'nanoc', '~> 4.1.2'
-gem 'nokogiri', '~> 1.6.7'
+gem 'nokogiri', '~> 1.12.5'
 gem 'w3c_validators', '~> 1.2'
 
 gem 'mime-types'
